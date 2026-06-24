@@ -34,7 +34,7 @@ C:\Users\User\Desktop\riscv
 
 ## 5. 如何產生 bitstream
 
-1. 開啟 **Xilinx Vivado 2025.2** 並建立一個針對 Artix-7 XC7A35T-1CPG236C 晶片的全新專案。
+1. 開啟 **Xilinx Vivado 2025.2** 並建立一個針對 Artix-7 xc7a35tcpg236-1 晶片的全新專案。
 2. 將 `C:\Users\User\Desktop\riscv` 底下的所有 Verilog 原始檔（`top.v`, `picorv32.v`, `timer.v`, `controller.v`）以及 `basys3.xdc` 約束檔匯入專案。
 3. 將編譯好的記憶體映像檔 `C:\Users\User\Desktop\riscvfirmware.mem` 作為設計來源一同併入專案資料夾，以供 BRAM 在合成時自動初始化讀取。
 4. 在 Vivado 的 Sources 介面中，選取 `top.v` 並點擊右鍵手動選擇 **Set as Top**（設為頂層模組），確保硬體管腳約束與實體腳位正確對接。
