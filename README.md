@@ -79,7 +79,7 @@ C:\Users\User\Desktop\riscv
 * [1] Kai-Chieh Hsu, *Verilog Programming Basic*, Course Slides, CS10014, National Yang Ming Chiao Tung University. URL: [people.cs.nycu.edu.tw/~ttyeh/course/2026_Spring/CS10014/slide/verilog.pdf](https://people.cs.nycu.edu.tw/~ttyeh/course/2026_Spring/CS10014/slide/verilog.pdf)
 * [2] Digilent, *Basys 3 Reference Manual*, 官方硬體規格說明文件. URL: [digilent.com/reference/programmable-logic/basys-3/reference-manual](https://digilent.com/reference/programmable-logic/basys-3/reference-manual)
 * [3] YosysHQ, *PicoRV32 - A Size-Optimized RISC-V CPU*. URL: [github.com/YosysHQ/picorv32](https://github.com/YosysHQ/picorv32)
-* [4] FPGA 開發社群相關設計討論與腳位例化慣例 (Reddit /r/FPGA). URL: [reddit.com/r/FPGA/comments/t6cvkk](https://www.google.com/search?q=https://www.reddit.com/r/FPGA/comments/t6cvkk)
+* [4] FPGA 開發社群相關設計討論與腳位例化慣例 (Reddit /r/FPGA). URL: [reddit.com/r/FPGA/comments/t6cvkk](https://www.reddit.com/r/FPGA/comments/t6cvkk/basys3_is_this_the_correct_way_to_instantiate_a/)
 * [5] Avinashabroy, *Basys3 七段顯示器控制教學實作專案*. URL: [https://github.com/Avinashabroy/Seven_Segment_Display_FPGA_Project](https://github.com/Avinashabroy/Seven_Segment_Display_FPGA_Project)
 
 
