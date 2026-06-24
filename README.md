@@ -52,8 +52,8 @@ C:\Users\User\Desktop\riscv
 ## 7. 如何燒錄到 FPGA 開發板
 
 1. 使用 Micro-USB 連接線將 Basys 3 開發板與電腦連接，並將板上的電源開關切換至 ON。
-2. 在 Vivado 主介面下方點擊開啟 **Hardware Manager**。
-3. 點擊頂部橫幅的 **Open Target** 並選取 **Auto Connect**，軟體將自動識別並與板載的 FPGA 晶片建立連線。
+2. 在 Vivado 主介面左下方點擊開啟 **Hardware Manager**。
+3. 點擊**Hardware Manager**下的 **Open Target** 並選取 **Auto Connect**，軟體將自動識別並與板載的 FPGA 晶片建立連線。
 4. 識別成功後，選取晶片並點擊右鍵選擇 **Program Device**。
 5. 在跳出的對話框中確認 Bitstream 檔案路徑指向先前產生的 `.bit` 檔，隨後點擊 **Program** 執行覆蓋寫入。
 
