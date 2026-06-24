@@ -37,7 +37,7 @@ C:\Users\User\Desktop\riscv
 1. 開啟 **Xilinx Vivado 2025.2** 並建立一個針對 Artix-7 xc7a35tcpg236-1 晶片的全新專案。
 2. 將 `C:\Users\User\Desktop\riscv` 底下的所有 Verilog 原始檔（`top.v`, `picorv32.v`, `timer.v`, `controller.v`）以及 `basys3.xdc` 約束檔匯入專案。
 3. 將編譯好的記憶體映像檔 `C:\Users\User\Desktop\riscvfirmware.mem` 作為設計來源一同併入專案資料夾，以供 BRAM 在合成時自動初始化讀取。
-4. 在 Vivado 的 Sources 介面中，選取 `top.v` 並點擊右鍵手動選擇 **Set as Top**（設為頂層模組），確保硬體管腳約束與實體腳位正確對接。
+4. 在 Vivado 的 Sources 介面中，選取 `top.v` 並點擊右鍵手動選擇 **Set as Top**，確保硬體管腳約束與實體腳位正確對接。
 5. 點擊左側 Flow Navigator 中的 **Run Synthesis** 執行硬體邏輯合成，並檢查是否有語法或架構上的錯誤。
 6. 合成通過後，點擊 **Run Implementation** 執行實體晶片佈線與時序驗證。
 7. 最後點擊 **Generate Bitstream**，系統將於專案目錄下轉譯並打包出開發板可接收的位元流檔案（`.bit`）。
@@ -47,7 +47,7 @@ C:\Users\User\Desktop\riscv
 1. 進入 `C:\Users\User\Desktop\riscv` 目錄，根據需求修改 `main.c` 中的控制邏輯或狀態機（如自訂暫停行為或 BCD 轉換演算法）。
 2. 開啟終端機，呼叫 **xPack GNU RISC-V Embedded GCC v15.2.0-1** 交叉編譯工具鏈，將高階 C 語言原始碼編譯為處理器架構專屬的機器碼（ELF 格式檔案）。
 3. 使用隨附的 `objcopy` 工具，將機器碼中的二進位純代碼區段精準剝離，轉譯並輸出為符合 Verilog 區塊記憶體格式的純文字十六進位映像檔 `firmware.mem`。
-4. 當重新執行 Vivado 的硬體合成（Run Synthesis）時，編譯引擎會自動抓取最新的 `firmware.mem` 並將其配置實體映射寫入 FPGA 內部的區塊記憶體（BRAM）中，實現軟體韌體更新。
+4. 當重新執行 Vivado 的 Run Synthesis 時，編譯引擎會自動抓取最新的 `firmware.mem` 並將其配置實體映射寫入 FPGA 內部的區塊記憶體中，實現軟體韌體更新。
 
 ## 7. 如何燒錄到 FPGA 開發板
 
